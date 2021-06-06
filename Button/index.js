@@ -6,36 +6,50 @@ export default function Button({
     ...props
 }) {
     const stylesBase = {
-        fontSize: 3,
+        fontSize: 4,
         cursor: "pointer",
-        borderRadius: "none",
+        borderRadius: "base",
         border: 0,
         color: "background",
-        px: 4,
-        py: 2,
+        px: 5,
+        py: 3,
+        boxShadow: 'base',
+        "&:hover": {
+        borderColor: 'transparent',
+        boxShadow: 'none'
+}
     };
     let stylesVariants;
     switch (variant) {
-        case 'primary':
+        case "primary":
             stylesVariants = { bg: "primary" };
+            break;
         case "primary-disabled":
-            stylesVariants = { bg: "darkGray", cursor: "disabled" };
+            stylesVariants = { bg: "darkGray", cursor: "not-allowed"};
+            break;
         case "secondary":
             stylesVariants = {
                 color: "primary",
                 border: "1px solid",
-                textShadow: "base",
+                borderColor: 'primary',
             };
-        case "upload":
-            stylesVariants = { bg: "mutedPrimary" };
-        case "upload-disabled":
-            stylesVariants = { bg: "mutedPrimary", cursor: "disabled" };
+            break;
         case "secondary-disabled":
             stylesVariants = {
                 color: "primary",
                 border: "1px solid",
-                cursor: "disabled",
+                borderColor: 'primary',
+                cursor: "not-allowed",
+                textShadow: "small",
             };
+            break;
+        case "upload":
+            stylesVariants = { bg: "lightPrimary" };
+            break;
+        case "upload-disabled":
+            stylesVariants = { bg: "lightPrimary", cursor: "not-allowed" };
+            break;
+        default:
     }
     return (
         <button sx={{ ...stylesBase, ...stylesVariants, ...sx }} {...props}>
