@@ -6,7 +6,7 @@ export default function Button({
     ...props
 }) {
     const stylesBase = {
-        fontSize: 4,
+        fontSize: [3, null, null, 3],
         cursor: "pointer",
         borderRadius: "base",
         border: 0,
