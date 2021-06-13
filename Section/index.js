@@ -3,7 +3,7 @@ import { Grid } from "theme-ui";
 
 export default function Section({ children, sx, ...props }) {
     return (
-        <section sx={{ ...sx }} {...props}>
+        <section sx={{ ...sx, ...styles.baseSection }} {...props}>
             <div sx={{ ...styles.children }}>{children}</div>
         </section>
     );
@@ -32,4 +32,7 @@ const styles = {
         mx: ["auto"],
         px: [4, 5, null, null, 4],
     },
+    baseSection: {
+        my: [5, null, null, 7] 
+    }
 };

@@ -3,9 +3,15 @@ import Heading from "remote/core-ui/Heading";
 
 export function TextSection({ title, children }) {
     return (
-        <div>
-            <h1>Test Text Section </h1>
-            <Heading>{title}</Heading>
+        <div sx={{ py: [6, null, null, 7], ...styles.textSection }}>
+            <Heading as="h2" sx={{ my: [3] }}>
+                {title}
+            </Heading>
+            {children}
         </div>
     );
 }
+
+const styles = {
+    textSection: {},
+};
