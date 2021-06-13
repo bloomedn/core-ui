@@ -1,12 +1,12 @@
 /** @jsxImportSource theme-ui */
 import { Grid } from "theme-ui";
 
-export default function ImageText({ left = null, right = null, ...props }) {
+export default function ImageText({ left = null, right = null, sx, ...props }) {
     return (
         <Grid
             {...props}
-            columns={[1, null, null, null, 2]}
-            sx={{ columnGap: [5], rowGap: [5, null, null, 6] }}
+            columns={[1, null, null, right ? "60% 1fr" : null]}
+            sx={{ columnGap: [4], rowGap: [5, null, null, 6], ...sx }}
         >
             <div>{left}</div>
             <div>{right}</div>
