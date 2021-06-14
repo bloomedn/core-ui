@@ -1,5 +1,4 @@
 /** @jsxImportSource theme-ui */
-import { Grid } from "theme-ui";
 
 export default function Section({ children, sx, ...props }) {
     return (
@@ -33,6 +32,10 @@ const styles = {
         px: [4, 5, null, null, 4],
     },
     baseSection: {
-        my: [5, null, null, 7] 
-    }
+        my: [7, null, null, 8],
+        "&:first-of-type": {
+            my: [5, null, null, 5],
+            bg: "red",
+        },
+    },
 };

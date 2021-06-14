@@ -40,7 +40,7 @@ export default function ImageText({
 const styles = {
     grid: {
         "&:hover": {
-            h2: { color: "primary" },
+            "& h2": { color: "primary" },
         },
     },
 };

@@ -6,10 +6,13 @@ export function EnlargedImage({ image, textOnRight }) {
     return (
         <div
             sx={{
-                my: [0, null, null, null, -5],
+                // my: [0, null, null, null, -5],
+                position: "relative",
+                top: [-5],
                 borderRadius: ["2rem"],
+                borderBottom: "4px solid",
+                borderColor: "primary",
                 overflow: "hidden",
-                ...styles.img,
                 "&:hover": {
                     border: "4px solid",
                     borderColor: "primary",
@@ -35,9 +38,4 @@ export function EnlargedImage({ image, textOnRight }) {
     );
 }
 
-const styles = {
-    img: {
-        borderBottom: "4px solid",
-        borderColor: "primary",
-    },
-};
+const styles = {};
