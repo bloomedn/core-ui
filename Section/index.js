@@ -32,10 +32,12 @@ const styles = {
         px: [4, 5, null, null, 4],
     },
     baseSection: {
-        my: [7, null, null, 8],
+        my: [6, null, null, 7],
         "&:first-of-type": {
             my: [5, null, null, 5],
             bg: "red",
         },
     },
 };
+
+export {SectionContent} from './content'

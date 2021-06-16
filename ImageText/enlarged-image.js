@@ -10,7 +10,7 @@ export function EnlargedImage({ image, textOnRight }) {
                 position: "relative",
                 top: [-5],
                 borderRadius: ["2rem"],
-                borderBottom: "4px solid",
+                // borderBottom: "4px solid",
                 borderColor: "primary",
                 overflow: "hidden",
                 "&:hover": {

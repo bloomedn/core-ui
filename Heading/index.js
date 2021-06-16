@@ -9,13 +9,13 @@ export default function HeadingDefault({ children, sx, ...props }) {
     );
 }
 
-export function HeadingBase({ type, ...props }) {
+export function HeadingBase({ type, sx, ...props }) {
     switch (type) {
         case "sectionHead":
             return (
                 <HeadingDefault
                     as="h2"
-                    sx={styles.sectionHead}
+                    sx={{ ...styles.sectionHead, ...sx }}
                     {...props}
                 />
             );
