@@ -17,7 +17,7 @@ export function RightFullSection({ children, sx, ...props }) {
                     ...styles.children,
                     maxWidth: "9999px",
                     pr: [0, 0, 0, 0, 0],
-                    pl: [null, null, null, null, 6],
+                    pl: [4, 5, null, null, 6],
                 }}
             >
                 {children}
@@ -33,10 +33,10 @@ const styles = {
         px: [4, 5, null, null, 4],
     },
     baseSection: {
-        my: [6, null, null, 8],
+        my: [5, null, null, 7],
+        py: [5, null, null, 6],
         "&:first-of-type": {
             my: [5, null, null, 5],
-            bg: "red",
         },
     },
 };

@@ -19,13 +19,43 @@ export function HeadingBase({ type, sx, ...props }) {
                     {...props}
                 />
             );
+        case "sectionHeadLarge":
+            return (
+                <HeadingDefault
+                    as="h2"
+                    sx={{ ...styles.sectionHeadLarge, ...sx }}
+                    {...props}
+                />
+            );
+        case "sectionHeadSmall":
+            return (
+                <HeadingDefault
+                    as="h2"
+                    sx={{ ...styles.sectionHeadSmall, ...sx }}
+                    {...props}
+                />
+            );
+        case "postHead":
+            return (
+                <HeadingDefault
+                    as="h2"
+                    sx={{ ...styles.sectionHead, ...sx }}
+                    {...props}
+                />
+            );
         default:
             return <p>heading base without type</p>;
     }
 }
 
 const styles = {
+    sectionHeadLarge: {
+        fontSize: [8],
+    },
     sectionHead: {
         fontSize: [6],
+    },
+    sectionHeadSmall: {
+        fontSize: [5],
     },
 };
