@@ -43,10 +43,21 @@ export function HeadingBase({ type, sx, ...props }) {
                     {...props}
                 />
             );
+        case "itemHead":
+            return (
+                <HeadingDefault
+                    as="h3"
+                    sx={{ ...styles.itemHead, ...sx }}
+                    {...props}
+                />
+            );
         default:
             return <p>heading base without type</p>;
     }
 }
+
+
+
 
 const styles = {
     sectionHeadLarge: {
@@ -57,5 +68,8 @@ const styles = {
     },
     sectionHeadSmall: {
         fontSize: [5],
+    },
+    itemHead: {
+        fontSize: [4],
     },
 };

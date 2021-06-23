@@ -1,9 +1,22 @@
 /** @jsxImportSource theme-ui */
-import classes from './styles.module.css'
+import classes from "./styles.module.css";
 
-export default function Section({ children, sx, ...props }) {
+export default function Section({
+    children,
+    miniMargin = false,
+    sx,
+    ...props
+}) {
     return (
-        <section sx={{ ...sx, ...styles.baseSection }} className={classes.section} {...props}>
+        <section
+            sx={{
+                ...sx,
+                ...styles.baseSection,
+                ...(miniMargin && styles.miniMargin),
+            }}
+            className={classes.section}
+            {...props}
+        >
             <div sx={{ ...styles.children }}>{children}</div>
         </section>
     );
@@ -39,6 +52,10 @@ const styles = {
             my: [5, null, null, 5],
         },
     },
+    miniMargin: {
+        my: [5, null, null, -5],
+        py: [5, null, null, 4],
+    },
 };
 
-export {SectionContent} from './content'
+export { SectionContent } from "./content";
