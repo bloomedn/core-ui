@@ -1,6 +1,5 @@
 .section:first-child {
     margin-top: "0px";
-    background: purple;
 }
 .section:last-child {
     margin-top: "0";
