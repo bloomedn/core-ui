@@ -1,12 +1,12 @@
 /** @jsxImportSource theme-ui */
-import { useState } from "react";
+import Accordion from 'components/accordion/accordion';
 
 export const Faq = ({ question, answer }) => {
-    const [open, setOpen] = useState(false);
     return (
-        <div onClick={() => setOpen((open) => !open)}>
-            <p>{question}</p>
-            {open && <p>{answer}</p>}
+        <div>
+            {/* <p>{question}</p>
+            {open && <p>{answer}</p>} */}
+            {/* <Accordion items={[{title : question, contents : answer }]} /> */}
         </div>
     );
 };
