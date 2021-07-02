@@ -21,7 +21,7 @@ export function SiderBarNavigationItem({ title, href }) {
 }
 
 const styles = {
-    grid: { gridTemplateColumns: ["250px 5px 1fr"], gap: [6] },
+    grid: { gridTemplateColumns: ["300px 5px 1fr"], gap: [6] },
     line: { width: "5px", height: "100%", bg: "lightestPrimary" },
     child: {},
 };
