@@ -1,17 +1,23 @@
 /** @jsxImportSource theme-ui */
 import Heading from "remote/core-ui/Heading";
+import { Container} from "theme-ui";
 
 export function TextSection({ title, children }) {
     return (
-        <div sx={{ py: [6, null, null, 7], ...styles.textSection }}>
-            <Heading as="h2" sx={{ my: [3] }}>
-                {title}
-            </Heading>
-            {children}
+        <div sx={styles.textSection}>
+                <Heading as="h2" sx = {styles.headingTitle}>
+                    {title}
+                </Heading>
+                {children}
         </div>
     );
 }
 
 const styles = {
-    textSection: {},
+    textSection: {
+        py: [6, null, null, 7], 
+    },
+    headingTitle : {
+        my: [3], 
+    }, 
 };
