@@ -62,6 +62,8 @@ const styles = {
     },
     sectionHead: {
         fontSize: [6],
+        lineHeight: 1.5,
+        paddingBottom :['5%'], 
     },
     sectionHeadSmall: {
         fontSize: [5],

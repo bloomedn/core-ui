@@ -1,8 +1,8 @@
 /** @jsxImportSource theme-ui */
-import { Grid } from "theme-ui";
+import { Box, Grid } from "theme-ui";
 import Link from "next/link";
 
-export default function SideBarNavivation({ navigation, child }) {
+export default function SideBarNavigation({ navigation, child }) {
     return (
         <Grid sx={styles.grid}>
             <div sx={styles.navigator}>{navigation}</div>
@@ -15,13 +15,18 @@ export default function SideBarNavivation({ navigation, child }) {
 export function SiderBarNavigationItem({ title, href }) {
     return (
         <Link href={href} scroll={false}>
-            <div sx={{ cursor: "pointer" }}> {title} </div>
+            <Box sx = {styles.linkTitle}> {title} </Box>
         </Link>
     );
 }
 
 const styles = {
-    grid: { gridTemplateColumns: ["300px 5px 1fr"], gap: [6] },
+    grid: { gridTemplateColumns: ["25% 5px 2fr"], gap: [6] },
     line: { width: "5px", height: "100%", bg: "lightestPrimary" },
     child: {},
+
+    linkTitle : {
+        cursor: "pointer",
+        justifyContent: 'center',
+    }
 };
