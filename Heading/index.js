@@ -56,6 +56,9 @@ export function HeadingBase({ type, sx, ...props }) {
     }
 }
 
+
+
+
 const styles = {
     sectionHeadLarge: {
         fontSize: [8],
