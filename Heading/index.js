@@ -11,6 +11,14 @@ export default function HeadingDefault({ children, sx, ...props }) {
 
 export function HeadingBase({ type, sx, ...props }) {
     switch (type) {
+        case "pageHead":
+            return (
+                <HeadingDefault
+                    as="h1"
+                    sx={{ ...styles.pageHead, ...sx }}
+                    {...props}
+                />
+            );
         case "sectionHead":
             return (
                 <HeadingDefault
@@ -56,10 +64,10 @@ export function HeadingBase({ type, sx, ...props }) {
     }
 }
 
-
-
-
 const styles = {
+    pageHead: {
+        fontSize: [6],
+    },
     sectionHeadLarge: {
         fontSize: [8],
     },
@@ -71,5 +79,6 @@ const styles = {
     },
     itemHead: {
         fontSize: [4],
+        fontWeight: "regular",
     },
 };
