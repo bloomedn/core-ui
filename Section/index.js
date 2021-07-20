@@ -46,7 +46,6 @@ const styles = {
         px: [4, 5, null, null, 4],
     },
     baseSection: {
-        my: [5, null, null, 7],
         py: [5, null, null, 6],
         "&:first-of-type": {
             my: [5, null, null, 5],
