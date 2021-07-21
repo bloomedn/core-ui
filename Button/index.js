@@ -6,7 +6,7 @@ export default function Button({
     ...props
 }) {
     const stylesBase = {
-        fontSize: [3, null, null, 3],
+        fontSize: [3],
         cursor: "pointer",
         borderRadius: "base",
         border: 0,
@@ -52,8 +52,16 @@ export default function Button({
         case "primary-small":
             stylesVariants = {
                 bg: "primary",
-                py: [2],
+                py: [1],
                 textAlign: "left",
+            };
+            break;
+        case "primary-xs":
+            stylesVariants = {
+                bg: "primary",
+                py: [1],
+                textAlign: "left",
+                fontSize: [1],
             };
             break;
         default:
