@@ -11,13 +11,13 @@ export default function Button({
         borderRadius: "base",
         border: 0,
         color: "background",
-        px: 5,
-        py: 3,
-        boxShadow: 'base',
+        px: [5],
+        py: [3],
+        boxShadow: "base",
         "&:hover": {
-        borderColor: 'transparent',
-        boxShadow: 'none'
-}
+            borderColor: "transparent",
+            boxShadow: "none",
+        },
     };
     let stylesVariants;
     switch (variant) {
@@ -25,20 +25,20 @@ export default function Button({
             stylesVariants = { bg: "primary" };
             break;
         case "primary-disabled":
-            stylesVariants = { bg: "darkGray", cursor: "not-allowed"};
+            stylesVariants = { bg: "darkGray", cursor: "not-allowed" };
             break;
         case "secondary":
             stylesVariants = {
                 color: "primary",
                 border: "1px solid",
-                borderColor: 'primary',
+                borderColor: "primary",
             };
             break;
         case "secondary-disabled":
             stylesVariants = {
                 color: "primary",
                 border: "1px solid",
-                borderColor: 'primary',
+                borderColor: "primary",
                 cursor: "not-allowed",
                 textShadow: "small",
             };
@@ -48,6 +48,13 @@ export default function Button({
             break;
         case "upload-disabled":
             stylesVariants = { bg: "lightPrimary", cursor: "not-allowed" };
+            break;
+        case "primary-small":
+            stylesVariants = {
+                bg: "primary",
+                py: [2],
+                textAlign: "left",
+            };
             break;
         default:
     }
