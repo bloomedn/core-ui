@@ -51,14 +51,22 @@ export default function Button({
             break;
         case "primary-small":
             stylesVariants = {
-                bg: "primary",
+                bg: "darkPrimary",
                 py: [1],
                 textAlign: "left",
             };
             break;
         case "primary-xs":
             stylesVariants = {
-                bg: "primary",
+                bg: "darkPrimary",
+                py: [1],
+                textAlign: "left",
+                fontSize: [1],
+            };
+            break;
+        case "secondary-xs":
+            stylesVariants = {
+                bg: "darkBlue",
                 py: [1],
                 textAlign: "left",
                 fontSize: [1],
