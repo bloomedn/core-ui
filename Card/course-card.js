@@ -26,22 +26,6 @@ export default function CourseCard({ name, program, url, image }) {
   );
 }
 
-// export default function CourseCard(){
-
-//     {/* //   <Card sx={styles.card}>
-// //     <Box sx={styles.box1}>
-// //       <div>Thurs</div>
-// //       <div className="event-day">21</div>
-// //     </Box>
-// //     <Box>
-// //       <div className="event-title">Full Subject Text</div>
-// //       <div className="event-date">21 January 2022</div>
-// //       <div className="event-time">10AM - 10PM</div>
-// //     </Box> */}
-//   </Card>
-// );
-// }
-
 const styles = {
   card: {
     cursor: "pointer",
