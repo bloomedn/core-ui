@@ -7,7 +7,13 @@ export default function CourseCard({ name, program, url, image }) {
     <a href={url} target="_blank" rel="noopener">
       <Card sx={styles.card}>
         <Box sx={styles.imgBox}>
-          <Image src={image} className="courseCard" alt={"Class10Math"} />
+          <Image
+            src={image}
+            className="courseCard"
+            alt={"Class10Math"}
+            height="150px"
+            width="350px"
+          />
         </Box>
         <Box sx={styles.lowerbox}>
           <Box>
@@ -29,6 +35,7 @@ export default function CourseCard({ name, program, url, image }) {
 const styles = {
   card: {
     cursor: "pointer",
+    minHeight: "350px",
     // transition: "margin-left 0.3s ease-in-out 0s",
     // my: 2,
     // // border: "solid 1px",
