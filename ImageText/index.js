@@ -1,6 +1,5 @@
 /** @jsxImportSource theme-ui */
 import React from "react";
-import SectionMain from "sections/programs/ProgramComponents/section-main";
 import { Grid } from "theme-ui";
 
 export default function ImageText({
