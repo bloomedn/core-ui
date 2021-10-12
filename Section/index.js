@@ -31,7 +31,7 @@ export function RightFullSection({ children, sx, ...props }) {
           maxWidth: "9999px",
           pr: [0, 0, 0, 0, 0],
           pl: [4, 5, null, null, 6],
-          //   pt: [4, 5, null, null, 6],
+          // pt: [4, 5, null, null, 6],
         }}
       >
         {children}

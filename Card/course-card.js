@@ -13,15 +13,9 @@ export default function CourseCard({
     <Card sx={{ display: "flex" }}>
       <a href={url} target="_blank" rel="noopener">
         <Card sx={styles.card}>
-          <Box sx={styles.imgBox}>
-            <Image
-              src={image}
-              className="courseCard"
-              alt={name}
-              height="150px"
-              width="350px"
-            />
-          </Box>
+          <Card sx={styles.imgBox}>
+            <Image src={image} alt={name} height="150px" width="350px" />
+          </Card>
           <Box sx={styles.lowerbox}>
             <Box>
               <Heading sx={styles.courseName}>{name}</Heading>
@@ -60,9 +54,9 @@ const styles = {
 
   imgBox: {
     display: "flex",
+    // bg: "red",
     "& .courseCard": {
       flexGrow: 1,
-      objectFit: "fill",
     },
   },
 
