@@ -17,6 +17,7 @@ const styles = {
     py: [6, null, null, 7],
   },
   headingTitle: {
+    alignText: "center",
     my: [3],
   },
 };
