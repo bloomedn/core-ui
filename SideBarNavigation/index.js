@@ -1,5 +1,5 @@
 /** @jsxImportSource theme-ui */
-import { Box, Grid } from "theme-ui";
+import { Box } from "theme-ui";
 import Link from "next/link";
 
 export default function SideBarNavigation({ navigation, child }) {
@@ -26,8 +26,10 @@ const styles = {
     gridTemplateColumns: [null, null, null, "250px 5px 1fr", "25% 5px 2fr"],
     gap: [6],
   },
+  navigator: {
+    overflow: ["auto"],
+  },
   line: { width: "5px", height: "100%", bg: "lightestPrimary" },
-  child: {},
 
   linkTitle: {
     cursor: "pointer",
